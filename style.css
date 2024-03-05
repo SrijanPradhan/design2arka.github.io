@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
+
+
+@font-face {
+    font-family: "cr" ;
+    src: url("cristtaline.ttf");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+.loader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    border: solid 1px black;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.loader .left-door {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    background-color: #080705;
+    /* background-color: #ffffff; */
+    /* border-top: solid 2px black ; */
+    border-right:solid 2px #2727271f;
+    /* border-right:solid 2px #ffffff; */
+    /* border-bottom: solid 2px black; */
+}
+
+.loader .right-door {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 90;
+    background-color: #080705;
+    /* background-color: #000000; */
+    /* border-top: solid 2px black ; */
+    border-left:solid 2px #2727271f;
+    /* border-right:solid 2px #ffffff; */
+    /* border-bottom: solid 2px black; */
+}
+
+.page1 {
+    height: 100vh;
+    width: 100%;
+    /* background-color: #eaff00; */
+    position: relative;
+    display: flex;
+}
+
+.page1 h3 span {
+    display: inline-block;
+}
+
+.page1 .left-part {
+    height: 100%;
+    width: 40vw;
+    background-color: #F8F8FF;
+    /* background-color: #fffff0; */
+    /* background-color: #F9F6EE; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.page1 .left-part .top-box {
+    height: 10vh;
+    width: 100%;
+    /* background-color: orange; */
+    border-bottom: solid 2px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page1 .left-part .top-box .top-inner-box {
+    /* background-color: greenyellow; */
+    height: 100%;
+    width: 75%;
+    border-left: solid 2px #000;
+    border-right: solid 2px #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.75vw;
+}
+
+.page1 .left-part .mid-box {
+    height: 80vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.page1 .left-part .mid-box .mid-left-box {
+    height: 100%;
+    width: 12.5%;
+    /* background-color: darkblue; */
+}
+
+.page1 .left-part .mid-box .mid-center-box {
+    height: 100%;
+    width: 75%;
+    background-color: transparent;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 1.75vw;
+    padding: 1vw 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.mid-center-box h1 span {
+    display: inline-block;
+}
+
+.page1 .left-part .mid-box .mid-center-box .para {
+    /* background-color: rebeccapurple; */
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.mid-center-box h2 span {
+    display: inline-block;
+}
+
+.page1 .left-part .mid-box .mid-center-box i {
+    border-radius: 50%;
+    border: 2px solid #000000;
+    display: inline-block;
+}
+
+.page1 .left-part .mid-box .mid-right-box {
+    height: 100%;
+    width: 12.5%;
+    /* background-color: hotpink; */
+}   
+
+.page1 .left-part .bottom-box {
+    height: 10vh;
+    width: 100%;
+    /* background-color: gold; */
+    border-top: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page1 .left-part .bottom-box .bottom-inner-box {
+    height: 100%;
+    width: 75%;
+    /* background-color: lemonchiffon; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    font-size: 3.5vw;
+    font-family: "Aboreto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 5px;
+}
+
+.page1 .left-part .bottom-box .bottom-inner-box h5 {
+    display: inline-block;
+}
+
+.page1 .left-part .bottom-box .bottom-inner-box .estd-logo {
+    height: 35%;
+    width: 10%;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: inline-block;
+
+}
+
+.page1 .right-part {
+    height: 100%;
+    width: 60vw;
+    /* background-color: fuchsia; */
+    position: relative;
+}
+
+.right-part video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.right-part .right-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    color: #fff;
+    border-bottom: solid 2px #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-part .right-nav .head-caption {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: brown; */
+    font-family: "cr", cursive;
+    font-weight: 400;
+    font-style:italic;
+    font-size: 2vw;
+}
+
+.right-part .right-nav .right-options {
+    height: 100%;
+    width: 30%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.75vw;
+}
